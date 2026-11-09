@@ -1,5 +1,6 @@
 package agh.po.lab3;
-
+import java.util.Map;
+import java.util.HashMap;
 public class CodingBat {
 
     public boolean sleepIn(boolean weekday, boolean vacation) {

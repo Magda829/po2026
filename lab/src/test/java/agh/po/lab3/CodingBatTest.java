@@ -1,5 +1,6 @@
 package agh.po.lab3;
-
+import java.util.Map;
+import java.util.HashMap;
 import static org.junit.Assert.*;
 
 public class CodingBatTest {
@@ -36,5 +37,21 @@ public class CodingBatTest {
         assertEquals("Hello X!", cb.helloName("X"));
         assertEquals("Hello Omega!", cb.helloName("Omega"));
         assertEquals("Hello Hello!", cb.helloName("Hello"));
+    }
+
+    @org.junit.Test
+    public void testMapAB() {
+        CodingBat cb = new CodingBat();
+        assertEquals(Map.of("a", "Hi", "b", "There", "ab", "HiThere"), cb.mapAB(new HashMap<>(Map.of("a", "Hi", "b", "There"))));
+        assertEquals(Map.of("a", "Hi"), cb.mapAB(new HashMap<>(Map.of("a", "Hi"))));
+        assertEquals(Map.of("b", "There"), cb.mapAB(new HashMap<>(Map.of("b", "There"))));
+    }
+
+    @org.junit.Test
+    public void testWordLen() {
+        CodingBat cb = new CodingBat();
+        assertEquals(Map.of("a", 1, "bb", 2), cb.wordLen(new String[]{"a", "bb", "a", "bb"}));
+        assertEquals(Map.of("this", 4, "and", 3, "that", 4), cb.wordLen(new String[]{"this", "and", "that", "and"}));
+        assertEquals(Map.of("code", 4, "bug", 3), cb.wordLen(new String[]{"code", "code", "code", "bug"}));
     }
 }
