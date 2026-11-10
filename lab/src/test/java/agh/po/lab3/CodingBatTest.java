@@ -24,11 +24,9 @@ public class CodingBatTest {
     @org.junit.Test
     public void countEvens() {
         CodingBat cb = new CodingBat();
-        int[] wynik = {3};
-        int[] num1 = {2,1,2,3,4};
-        assertArrayEquals(wynik, cb.countEvens(num1));
-        //assertArrayEquals({3}, cb.countEvens({2,2,0}));
-        //assertArrayEquals(1, cb.countEvens({2}));
+        assertEquals(3, cb.countEvens(new int[]{2,1,2,3,4}));
+        assertEquals(5, cb.countEvens(new int[]{2,2,0,4,6}));
+        assertEquals(0, cb.countEvens(new int[]{1,3,5}));
     }
 
     @org.junit.Test
