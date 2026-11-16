@@ -18,5 +18,9 @@ public abstract class Animal {
     }
 
     public abstract String getDescription();
+
+    public void makeSound() {
+        System.out.println("Wydaje dźwięk");
+    }
 }
 

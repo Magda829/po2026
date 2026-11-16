@@ -33,6 +33,7 @@ public class Zoo {
             int legs = animal.getLegs();
             String description = animal.getDescription();
             System.out.println(description);
+            animal.makeSound();
         }
     }
 
