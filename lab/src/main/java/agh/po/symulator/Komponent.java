@@ -13,7 +13,7 @@ public class Komponent {
     }
     public Komponent() {}
 
-    public String getName() {
+    public String getNazwa() {
         return nazwa;
     }
 

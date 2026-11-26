@@ -18,6 +18,7 @@ public class Samochod {
 
     public void wylacz() {
         silnik.zatrzymaj();
+        skrzynia.aktualnyBieg = 0;
     }
 
 }

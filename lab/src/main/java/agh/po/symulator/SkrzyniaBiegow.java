@@ -3,7 +3,8 @@ package agh.po.symulator;
 public class SkrzyniaBiegow extends Komponent {
     protected int aktualnyBieg;
     protected int iloscBiegow;
-    protected int aktualnePrzelozenie;
+    protected double aktualnePrzelozenie;
+    Sprzeglo sprzeglo = new Sprzeglo();
 
     public SkrzyniaBiegow(int aktualnyBieg, int iloscBiegow, int aktualnePrzelozenie) {
         this.aktualnyBieg = aktualnyBieg;
@@ -29,7 +30,7 @@ public class SkrzyniaBiegow extends Komponent {
         return aktualnyBieg;
     }
 
-    public int getAktPrzelozenie() {
+    public double getAktPrzelozenie() {
         return aktualnePrzelozenie;
     }
 }

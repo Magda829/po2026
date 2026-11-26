@@ -10,8 +10,8 @@ public class Pozycja {
     }
 
     public void aktualizujPozycję(double deltaX, double deltaY) {
-        x = deltaX;
-        y = deltaY;
+        x += deltaX;
+        y += deltaY;
     }
 
     public String getPozycja() {
